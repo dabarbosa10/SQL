@@ -174,5 +174,10 @@ FROM payments
 WHERE status='paid'
 GROUP BY 1
 ORDER BY 2 DESC;
+--------------------
+---When users successfully pay Codeflix (status = 'paid'), what is the average payment amount?
+SELECT AVG(amount)
+FROM payments
+WHERE status='paid';
 
 
